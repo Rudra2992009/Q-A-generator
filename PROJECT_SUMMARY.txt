@@ -1,0 +1,460 @@
+
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘                    CBSE AI SAMPLE PAPER GENERATOR                            â•‘
+â•‘                         PROJECT DELIVERABLES                                 â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+ðŸ“¦ WHAT YOU RECEIVED:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+1. ðŸŒ WEB APPLICATION (HTML5 + CSS + JavaScript)
+   â€¢ Modern, responsive single-page application
+   â€¢ API key configuration interface (supports 3 keys)
+   â€¢ Class and subject selection dropdowns
+   â€¢ Real-time question generation
+   â€¢ Download functionality
+   â€¢ Professional UI/UX design
+
+   ðŸ“‚ Files: cbse-paper-gen.zip (deployed web application)
+   ðŸ”— Live Preview: Check the generated web application above
+
+2. ðŸ PYTHON FLASK BACKEND (API Server)
+   â€¢ RESTful API with 4 endpoints
+   â€¢ API key rotation mechanism (round-robin)
+   â€¢ Google Gemini API integration
+   â€¢ CORS-enabled for JavaScript communication
+   â€¢ Error handling and validation
+
+   ðŸ“‚ Files: flask_app.py
+   ðŸš€ Usage: python flask_app.py
+
+3. ðŸ“š COMPREHENSIVE DOCUMENTATION
+   â€¢ README.md - Complete project documentation
+   â€¢ QUICKSTART.md - 5-minute setup guide
+   â€¢ INTEGRATION.md - Frontend-backend communication details
+   â€¢ DEPLOYMENT.md - Production deployment guide
+   â€¢ requirements.txt - Python dependencies
+   â€¢ .env.example - Environment variable template
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸŽ¯ KEY FEATURES:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+âœ… Supports Classes 9, 10, 11, 12
+âœ… 18+ subjects across Science, Commerce, and Humanities
+âœ… Generates 50 CBSE board-pattern questions per paper
+âœ… Question type distribution:
+   â€¢ MCQs: 20% (10 questions)
+   â€¢ Short Answer: 30% (15 questions)
+   â€¢ Long Answer: 30% (15 questions)
+   â€¢ Case-Based: 20% (10 questions)
+âœ… Multiple API key support with automatic rotation
+âœ… Responsive design (works on mobile and desktop)
+âœ… Download generated papers
+âœ… Real-time generation with loading states
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸ—ï¸ ARCHITECTURE:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+    â”‚                    USER BROWSER                             â”‚
+    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
+    â”‚  â”‚  HTML5 + CSS3 + JavaScript (Frontend)                 â”‚  â”‚
+    â”‚  â”‚  â€¢ User enters 3 Gemini API keys                      â”‚  â”‚
+    â”‚  â”‚  â€¢ Selects class (9/10/11/12) and subject            â”‚  â”‚
+    â”‚  â”‚  â€¢ Clicks "Generate Paper"                            â”‚  â”‚
+    â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                               â†“
+                    HTTP Requests (fetch API)
+                               â†“
+    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+    â”‚              FLASK SERVER (Python Backend)                  â”‚
+    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
+    â”‚  â”‚  Routes:                                              â”‚  â”‚
+    â”‚  â”‚  â€¢ POST /api/configure-keys (save API keys)          â”‚  â”‚
+    â”‚  â”‚  â€¢ GET  /api/get-subjects (get subject list)         â”‚  â”‚
+    â”‚  â”‚  â€¢ POST /api/generate-paper (main generation)        â”‚  â”‚
+    â”‚  â”‚  â€¢ GET  /api/health (health check)                   â”‚  â”‚
+    â”‚  â”‚                                                       â”‚  â”‚
+    â”‚  â”‚  API Key Rotation:                                   â”‚  â”‚
+    â”‚  â”‚  Keys: [key1, key2, key3]                           â”‚  â”‚
+    â”‚  â”‚  Request 1 â†’ key1                                    â”‚  â”‚
+    â”‚  â”‚  Request 2 â†’ key2                                    â”‚  â”‚
+    â”‚  â”‚  Request 3 â†’ key3                                    â”‚  â”‚
+    â”‚  â”‚  Request 4 â†’ key1 (cycles back)                     â”‚  â”‚
+    â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                               â†“
+                   Google Gemini API Calls
+                               â†“
+    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+    â”‚                 GOOGLE GEMINI API                           â”‚
+    â”‚  â€¢ Receives detailed prompt with CBSE requirements          â”‚
+    â”‚  â€¢ Generates 50 questions with proper formatting            â”‚
+    â”‚  â€¢ Returns structured text response                         â”‚
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸš€ QUICK START (5 MINUTES):
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+STEP 1: Get Gemini API Keys (2 min)
+   â†’ Visit: https://ai.google.dev/
+   â†’ Sign in with Google
+   â†’ Click "Get API Key" â†’ "Create API Key"
+   â†’ Copy 1-3 API keys
+
+STEP 2: Install Dependencies (1 min)
+   $ pip install flask flask-cors google-generativeai
+
+STEP 3: Start Flask Server (30 sec)
+   $ python flask_app.py
+
+   You'll see:
+   ============================================================
+   CBSE AI Sample Paper Generator - Flask Backend
+   ============================================================
+   Server starting on http://localhost:5000
+   ...
+
+STEP 4: Open Web Application (30 sec)
+   â†’ Open the downloaded cbse-paper-gen application in browser
+   â†’ Or navigate to http://localhost:5000 if serving from Flask
+
+STEP 5: Configure and Generate (1 min)
+   1. Enter your API keys in the configuration section
+   2. Click "Save API Keys"
+   3. Select Class: 10
+   4. Select Subject: Mathematics
+   5. Click "Generate Paper"
+   6. Wait 10-30 seconds
+   7. Download your generated paper!
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸ’» TECHNICAL DETAILS:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+FRONTEND STACK:
+  â€¢ HTML5 (semantic markup, form validation)
+  â€¢ CSS3 (modern styling, flexbox, animations, responsive design)
+  â€¢ JavaScript (ES6+, async/await, fetch API, DOM manipulation)
+
+BACKEND STACK:
+  â€¢ Python 3.8+
+  â€¢ Flask 3.0.0 (web framework)
+  â€¢ flask-cors 4.0.0 (CORS support)
+  â€¢ google-generativeai 0.3.2 (Gemini API client)
+
+API ENDPOINTS:
+
+  1. POST /api/configure-keys
+     Body: {"api_keys": ["key1", "key2", "key3"]}
+     Returns: {"success": true, "message": "...", "key_count": 3}
+
+  2. GET /api/get-subjects?class=10
+     Returns: {"success": true, "subjects": ["Math", "Science", ...]}
+
+  3. POST /api/generate-paper
+     Body: {"class": "10", "subject": "Mathematics"}
+     Returns: {"success": true, "questions": "...", "question_count": 50}
+
+  4. GET /api/health
+     Returns: {"status": "healthy", "api_keys_configured": 3}
+
+SUPPORTED SUBJECTS:
+
+  Class 9 & 10 (5 subjects):
+    â€¢ Mathematics
+    â€¢ Science
+    â€¢ Social Science
+    â€¢ English
+    â€¢ Hindi
+
+  Class 11 & 12 (14 subjects):
+    â€¢ Mathematics
+    â€¢ Physics
+    â€¢ Chemistry
+    â€¢ Biology
+    â€¢ English
+    â€¢ Computer Science
+    â€¢ Business Studies
+    â€¢ Accountancy
+    â€¢ Economics
+    â€¢ History
+    â€¢ Geography
+    â€¢ Political Science
+    â€¢ Psychology
+    â€¢ Physical Education
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸ”‘ API KEY ROTATION EXPLAINED:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+WHY? 
+  â€¢ Gemini API has rate limits (requests per minute/day)
+  â€¢ Multiple keys distribute the load
+  â€¢ Reduces chance of hitting limits
+  â€¢ Increases reliability and uptime
+
+HOW?
+  Python implementation uses round-robin algorithm:
+
+  api_keys = ['key1', 'key2', 'key3']
+  current_index = 0
+
+  Request 1: Uses key1 â†’ index becomes 1
+  Request 2: Uses key2 â†’ index becomes 2
+  Request 3: Uses key3 â†’ index becomes 0 (wraps around)
+  Request 4: Uses key1 â†’ index becomes 1
+  ...and so on
+
+  Code:
+  def get_next_api_key():
+      key = api_keys[current_key_index]
+      current_key_index = (current_key_index + 1) % len(api_keys)
+      return key
+
+BENEFITS:
+  âœ“ Automatic load distribution
+  âœ“ No manual intervention needed
+  âœ“ Seamless failover
+  âœ“ Better resource utilization
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸ“¡ JAVASCRIPT â†” PYTHON COMMUNICATION:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+How does the frontend talk to the backend?
+
+JAVASCRIPT (sends):
+  async function generatePaper() {
+      const response = await fetch('http://localhost:5000/api/generate-paper', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+              class: '10',
+              subject: 'Mathematics'
+          })
+      });
+      const data = await response.json();
+      displayQuestions(data.questions);
+  }
+
+PYTHON FLASK (receives):
+  @app.route('/api/generate-paper', methods=['POST'])
+  def generate_paper():
+      data = request.get_json()
+      class_num = data['class']
+      subject = data['subject']
+
+      # Generate questions using Gemini
+      questions = generate_questions_with_gemini(class_num, subject)
+
+      return jsonify({
+          'success': True,
+          'questions': questions
+      })
+
+KEY POINTS:
+  â€¢ Data exchanged as JSON format
+  â€¢ Flask-CORS enables cross-origin requests
+  â€¢ Async/await for non-blocking JavaScript
+  â€¢ Error handling on both sides
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸ”’ SECURITY BEST PRACTICES:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+âœ… DO:
+  â€¢ Let users provide their own API keys
+  â€¢ Store keys in backend (not in frontend JavaScript)
+  â€¢ Use environment variables in production
+  â€¢ Enable HTTPS for production
+  â€¢ Validate all inputs on backend
+  â€¢ Implement rate limiting
+  â€¢ Add request logging
+  â€¢ Use CORS restrictions in production
+
+âŒ DON'T:
+  â€¢ Hardcode API keys in JavaScript
+  â€¢ Commit API keys to GitHub
+  â€¢ Expose keys in browser DevTools
+  â€¢ Skip input validation
+  â€¢ Allow unrestricted CORS in production
+
+PRODUCTION CHECKLIST:
+  â–¡ Use environment variables for keys
+  â–¡ Set FLASK_ENV=production
+  â–¡ Disable debug mode
+  â–¡ Configure proper CORS origins
+  â–¡ Enable HTTPS
+  â–¡ Add rate limiting
+  â–¡ Set up monitoring
+  â–¡ Configure backups
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸ› TROUBLESHOOTING:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+PROBLEM: "Connection refused"
+SOLUTION: Make sure Flask server is running
+  $ python flask_app.py
+
+PROBLEM: "CORS error in browser console"
+SOLUTION: Install and enable Flask-CORS
+  $ pip install flask-cors
+  (Already included in flask_app.py)
+
+PROBLEM: "Invalid API key"
+SOLUTION: Verify your API key at https://ai.google.dev/
+
+PROBLEM: "Rate limit exceeded"
+SOLUTION: Add more API keys or wait a few minutes
+
+PROBLEM: "Port 5000 already in use"
+SOLUTION: Kill existing process or change port
+  # Change in flask_app.py:
+  app.run(port=5001)
+
+PROBLEM: Questions not generating
+SOLUTION: Check Flask console for error messages
+  â€¢ Verify API keys are valid
+  â€¢ Check internet connection
+  â€¢ Look for Python errors in terminal
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸ“ FILE STRUCTURE:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+cbse-paper-generator/
+â”‚
+â”œâ”€â”€ ðŸŒ FRONTEND
+â”‚   â””â”€â”€ cbse-paper-gen.zip
+â”‚       â”œâ”€â”€ index.html          (Main application page)
+â”‚       â”œâ”€â”€ styles.css           (Embedded in HTML)
+â”‚       â””â”€â”€ script.js            (Embedded in HTML)
+â”‚
+â”œâ”€â”€ ðŸ BACKEND
+â”‚   â””â”€â”€ flask_app.py            (Python Flask server)
+â”‚
+â”œâ”€â”€ ðŸ“š DOCUMENTATION
+â”‚   â”œâ”€â”€ README.md               (Complete documentation)
+â”‚   â”œâ”€â”€ QUICKSTART.md           (5-minute setup guide)
+â”‚   â”œâ”€â”€ INTEGRATION.md          (Frontend-Backend communication)
+â”‚   â”œâ”€â”€ DEPLOYMENT.md           (Production deployment guide)
+â”‚   â”œâ”€â”€ requirements.txt        (Python dependencies)
+â”‚   â””â”€â”€ .env.example            (Environment variable template)
+â”‚
+â””â”€â”€ ðŸ“Š THIS FILE
+    â””â”€â”€ PROJECT_SUMMARY.txt     (You are here!)
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸŽ“ CBSE QUESTION PATTERN:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+The generator creates questions following official CBSE board pattern:
+
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Question Type       â”‚ Count â”‚ Marks Each  â”‚ Total      â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ MCQs                â”‚  10   â”‚     1       â”‚   10       â”‚
+â”‚ Short Answer        â”‚  15   â”‚    2-3      â”‚  30-45     â”‚
+â”‚ Long Answer         â”‚  15   â”‚    5-6      â”‚  75-90     â”‚
+â”‚ Case-Based          â”‚  10   â”‚     4       â”‚   40       â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ TOTAL               â”‚  50   â”‚     -       â”‚ 155-185    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+
+Features:
+  â€¢ Aligned with CBSE syllabus 2025-26
+  â€¢ Mix of difficulty levels (easy, moderate, difficult)
+  â€¢ Covers core concepts and applications
+  â€¢ Real-world problem-solving questions
+  â€¢ Conceptual understanding focus
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸŒŸ NEXT STEPS:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+IMMEDIATE (Get Started Now):
+  1. Get your Gemini API keys from https://ai.google.dev/
+  2. Install Python dependencies: pip install -r requirements.txt
+  3. Start the Flask server: python flask_app.py
+  4. Open the web application in your browser
+  5. Enter API keys and generate your first paper!
+
+SHORT TERM (Enhance the Application):
+  â€¢ Add PDF export functionality
+  â€¢ Implement answer key generation
+  â€¢ Add marking scheme details
+  â€¢ Create question bank for offline use
+  â€¢ Add more customization options
+
+LONG TERM (Production Ready):
+  â€¢ Deploy to cloud (see DEPLOYMENT.md)
+  â€¢ Add user authentication
+  â€¢ Implement database for saved papers
+  â€¢ Create mobile app version
+  â€¢ Add analytics and usage tracking
+  â€¢ Support for more Indian boards (ICSE, State boards)
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸ’¡ TIPS FOR SUCCESS:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+âœ“ Use 3 API keys for best performance
+âœ“ Monitor your Gemini API usage at https://console.cloud.google.com
+âœ“ Review generated questions before using with students
+âœ“ Customize prompts in flask_app.py for specific needs
+âœ“ Keep Flask server running while using the application
+âœ“ Check browser console (F12) for any errors
+âœ“ Read QUICKSTART.md for fastest setup
+âœ“ Refer to INTEGRATION.md for understanding the code
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+ðŸ“§ SUPPORT & RESOURCES:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+Documentation: See README.md and other guide files
+Gemini API Docs: https://ai.google.dev/docs
+Flask Docs: https://flask.palletsprojects.com/
+Python Docs: https://docs.python.org/3/
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+âš ï¸  IMPORTANT NOTES:
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+â€¢ This is an educational tool - review questions before using with students
+â€¢ Not affiliated with CBSE or Google
+â€¢ Generated questions should supplement, not replace, official CBSE materials
+â€¢ API usage costs apply based on your Gemini API plan
+â€¢ Keep your API keys secure and never share them publicly
+â€¢ The application requires internet connection to function
+
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘                        ðŸŽ‰ YOU'RE ALL SET! ðŸŽ‰                                â•‘
+â•‘                                                                              â•‘
+â•‘  Your CBSE AI Sample Paper Generator is ready to use!                       â•‘
+â•‘                                                                              â•‘
+â•‘  Start generating high-quality CBSE sample papers with AI today.            â•‘
+â•‘                                                                              â•‘
+â•‘                      Made with â¤ï¸ for students                              â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
